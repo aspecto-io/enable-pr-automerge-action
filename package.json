@@ -1,0 +1,13 @@
+{
+  "name": "pr-auto-merge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx ncc build index.js"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@octokit/core": "^3.2.5"
+  }
+}

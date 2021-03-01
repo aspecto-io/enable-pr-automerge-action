@@ -1,0 +1,29 @@
+name: 'Enable AutoMerge on a PullRequest'
+description: 'Enable the AutoMerge on a pull request'
+
+inputs:
+  token:
+    description: 'Token to use for github api'
+    required: true
+
+  owner:
+    description: 'Repo owner'
+    required: true  
+
+  repo:
+    description: 'Repo name'
+    required: true      
+
+  pull-number:
+    description: 'Pull request number in github'
+    required: true
+
+  merge-method:
+    description: 'The merge method to use in the auto merge'
+    required: false
+    default: 'SQUASH'
+
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
