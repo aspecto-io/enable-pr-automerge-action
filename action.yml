@@ -1,5 +1,7 @@
 name: 'Enable AutoMerge on a PullRequest'
 description: 'Enable the AutoMerge on a pull request'
+author: Aspecto
+
 
 inputs:
   token:
@@ -27,3 +29,7 @@ inputs:
 runs:
   using: 'node12'
   main: 'dist/index.js'
+
+branding:
+  icon: 'git-merge'
+  color: 'orange'
